@@ -14,9 +14,9 @@ module.exports = function(config) {
   /**
    * Compiles Pug files.
    *
-   * If the gulp command have the production option, the images rev-manifest
-   * JSON file is used to replace the images references in the compiled
-   * HTML file.
+   * If the gulp command is executed with the `--production` option, the images
+   * `rev-manifest.json` file is used to replace the images references in the
+   * compiled HTML file.
    */
   gulp.task('pug', function() {
     const changed = require('gulp-changed');
@@ -42,9 +42,10 @@ module.exports = function(config) {
   /**
    * Injects assets files.
    *
-   * Useref is used to inject CSS and JavaScript files into the compiled HTML
-   * file. If the gulp command have the production option, the assets are
-   * minified and static asset revisioning hashes are added.
+   * Pug files are compiled into the `dist` folder.
+   * `gul-useref` is used to inject CSS and JS files into the compiled
+   * HTML file. If the gulp command is executed with the `--production` option,
+   * assets are minified and static asset revisioning hashes added.
    */
   gulp.task('template:injectAssets', function() {
     const cleanCSS = require('gulp-clean-css');

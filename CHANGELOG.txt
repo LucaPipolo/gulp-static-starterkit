@@ -1,4 +1,9 @@
 == Changelog ==
 
+= 1.0.1 - 2019-02-26 =
+* Fix - Path to dependencies folder was wrong.
+* Fix - Path to package.json file was wrong.
+* Fix — README file and code comments.
+
 = 1.0.0 - 2019-02-23 =
 * Initial version.

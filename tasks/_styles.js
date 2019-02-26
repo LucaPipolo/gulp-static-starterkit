@@ -20,9 +20,10 @@ module.exports = function(config, pkg) {
   /**
    * Compiles Sass files.
    *
-   * Sass files are compiled to the dist folder. Copyright is injected
-   * taking information from the package.json file. If the gulp command
-   * have the production option, the sourcemaps are not created.
+   * Sass files are compiled to the `dist/styles` folder. Copyright information
+   * from `package.json` is injected in the compiled CSS file.
+   * If the gulp command is executed with the `--production` option sourcemaps
+   * are not created.
    */
   gulp.task('sass', function() {
     const autoprefixer = require('autoprefixer');
