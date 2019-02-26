@@ -4,19 +4,18 @@
 
 const gulp = require('gulp');
 
-const pkg = require('../../package.json');
-const copyrightPlaceholder = '/*! #copyright DO NOT REMOVE# */';
-const copyrightNotice = ['/*!',
-  ' * ' + pkg.name + ' - ' + pkg.description,
-  ' * @version v' + pkg.version,
-  ' * @link ' + pkg.homepage,
-  ' * @author ' + pkg.author,
-  ' */',
-  ''].join('\n');
-
-module.exports = function(config) {
+module.exports = function(config, pkg) {
   const argv = require('yargs').argv;
   const isProduction = (argv.production === undefined) ? false : true;
+
+  const copyrightPlaceholder = '/*! #copyright DO NOT REMOVE# */';
+  const copyrightNotice = ['/*!',
+    ' * ' + pkg.name + ' - ' + pkg.description,
+    ' * @version v' + pkg.version,
+    ' * @link ' + pkg.homepage,
+    ' * @author ' + pkg.author,
+    ' */',
+    ''].join('\n');
 
   /**
    * Transpiles JavaScript files.

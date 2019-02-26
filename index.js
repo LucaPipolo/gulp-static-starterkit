@@ -7,6 +7,7 @@ module.exports = function(gulp) {
 
   // Require configs and all tasks in gulp/tasks, including sub-folders.
   const config = require('./config');
+  const pkg = require('./package.json');
   const tasks = requireDir('./tasks', {
     recurse: true,
   });
@@ -24,7 +25,7 @@ module.exports = function(gulp) {
           resolveTasks(fn);
           continue;
         }
-        fn(config);
+        fn(config, pkg);
       }
     }
   }
