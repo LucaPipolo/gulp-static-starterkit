@@ -1,6 +1,6 @@
 {
   "name": "@luca.pipolo/gulp-static-starterkit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Gulp task collection for static websites starter kit.",
   "main": "./dist/index.html",
   "repository": {

@@ -20,9 +20,10 @@ module.exports = function(config, pkg) {
   /**
    * Transpiles JavaScript files.
    *
-   * ES6 and ES7 code is transpiled thanks to Babel. Copyright is injected
-   * taking information from the package.json file. If the gulp command
-   * have the production option, the sourcemaps are not created.
+   * ES6 and ES7 code is transpiled thanks to Babel. Copyright information from
+   * `package.json` is injected in the compiled JS file.
+   * If the gulp command is executed with the `--production` option,
+   * sourcemaps are not created.
    */
   gulp.task('js', function() {
     const babel = require('gulp-babel');
