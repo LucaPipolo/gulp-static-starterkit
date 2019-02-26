@@ -1,4 +1,4 @@
-## Your checklist for this Pull Request
+## Checklist for this Pull Request
 
 - [ ] Check if there is already an open issue. If not, please create one.
 - [ ] Check the added code or even all commits' message styles matches our requested structure.
@@ -8,5 +8,3 @@
 ## Related Issue
 
 - []()
-
-Thank you! :heart:
