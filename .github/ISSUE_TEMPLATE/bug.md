@@ -8,7 +8,7 @@
 
 ## Actual behaviour
 
-- Tell us what happens instead.
+- Tell us how it is working instead.
 
 ## Your environment
 
