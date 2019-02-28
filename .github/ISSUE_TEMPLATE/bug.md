@@ -4,7 +4,7 @@
 
 ## Expected behaviour
 
-- Tell us what should happen.
+- Tell us how it should work.
 
 ## Actual behaviour
 
