@@ -18,4 +18,4 @@
 
 ## Steps to reproduce [ Good To Have ]
 
-Tell us how to reproduce this issue. Please, use an ordered list to do so.
+Tell us how to reproduce this issue. Please, use an ordered list of steps to do so.
