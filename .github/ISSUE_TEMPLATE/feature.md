@@ -10,7 +10,7 @@
 
 1. Proposed step 1
 2. Proposed step 2
-3. etc.
+3. Etc.
 
 ## Resources [ If Applicable ]
 
