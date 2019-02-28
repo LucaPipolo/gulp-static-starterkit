@@ -14,7 +14,7 @@
 
 ## Resources [ If Applicable ]
 
-- Link(s) to external/internal resources that might be helpful to create the feature.
+- Link(s) to external/internal resources that might be helpful to implement the feature.
 
 ## Details [ If Applicable ]
 
