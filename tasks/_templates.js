@@ -57,7 +57,11 @@ module.exports = function(config) {
     return gulp.src(config.tmp.templates)
         .pipe(useref())
         .pipe(gulpIf(isProduction && '*.css', cleanCSS()))
-        .pipe(gulpIf(isProduction && '*.js', uglify()))
+        .pipe(gulpIf(isProduction && '*.js', uglify({
+          output: {
+            comments: '/^!/',
+          },
+        })))
         .pipe(gulpIf(isProduction && '!index.html', rev()))
         .pipe(gulpIf(isProduction && '*.css', rename({
           suffix: '.min',
