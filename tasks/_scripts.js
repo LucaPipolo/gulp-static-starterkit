@@ -32,14 +32,12 @@ module.exports = function(config, pkg) {
     const handleErrors = require('../utils/handleErrors');
     const replace = require('gulp-replace');
     const sourcemaps = require('gulp-sourcemaps');
-    const uglify = require('gulp-uglify');
 
     const task = gulp.src(config.src.js)
         .pipe(changed(config.dist.main, {extension: '.js'}))
         .pipe(gulpIf(!isProduction, sourcemaps.init()))
         .pipe(babel())
         .pipe(replace(copyrightPlaceholder, copyrightNotice))
-        .pipe(gulpIf(isProduction, uglify()))
         .pipe(gulpIf(!isProduction, sourcemaps.write(config.sourcemaps)))
         .on('error', handleErrors)
         .pipe(gulp.dest(config.tmp.scripts));
