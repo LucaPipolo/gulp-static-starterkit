@@ -11,7 +11,9 @@ module.exports = function(config) {
   gulp.task('fonts:google', function() {
     const googleWebFonts = require('gulp-google-webfonts');
 
-    const task = gulp.src(config.src.fonts + '/google-fonts.list')
+    const task = gulp.src(config.src.fonts + '/google-fonts.list', {
+      allowEmpty: true,
+    })
         .pipe(googleWebFonts({fontsDir: '../fonts'}))
         .pipe(gulp.dest(config.dist.fonts));
     return task;
