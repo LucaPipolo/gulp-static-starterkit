@@ -11,7 +11,9 @@ module.exports = function(config) {
   gulp.task('copy:htaccess', function() {
     const copy = require('gulp-copy');
 
-    const task = gulp.src(config.src.main + '.htaccess')
+    const task = gulp.src(config.src.main + '.htaccess', {
+      allowEmpty: true,
+    })
         .pipe(copy(config.dist.main, {
           prefix: 1,
         }))

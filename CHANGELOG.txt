@@ -1,5 +1,12 @@
 == Changelog ==
 
+= 1.1.0 - 2019-03-05 =
+* Fix - Added sample gulpfile.
+* Fix - Added Issue and Pull Request GitHub templates.
+* Dev - Added JavaScript tests.
+* Fix - Fixed JS files were compressed twice and licence comment was stripped.
+* Fix - Fixed gulp build was failing if .htaccess or google-fonts.list files were missing.
+
 = 1.0.1 - 2019-02-26 =
 * Fix - Path to dependencies folder was wrong.
 * Fix - Path to package.json file was wrong.
