@@ -6,7 +6,7 @@ chai.use(fs);
 describe('production', function () {
   // Styles.
   it('CSS file is minified.', function(done) {
-    expect('test-website/dist/styles/main-ccdfbef0d1.min.css').to.be.a.file().and.have.contents.that.match(/\*\/(?!\n).*$/);
+    expect('test-website/dist/styles/main-07781b0850.min.css').to.be.a.file().and.have.contents.that.match(/\*\/(?!\n).*$/);
     done();
   });
 
@@ -17,7 +17,7 @@ describe('production', function () {
 
   // Scripts.
   it('JavaScript file is minified.', function(done) {
-    expect('test-website/dist/scripts/main-fa27bd3f54.min.js').to.be.a.file().and.have.contents.that.match(/\*\/(?!\n).*$/);
+    expect('test-website/dist/scripts/main-4705548f00.min.js').to.be.a.file().and.have.contents.that.match(/\*\/(?!\n).*$/);
     done();
   });
 
