@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/LucaPipolo/gulp-static-starterkit.svg?branch=master)](https://travis-ci.org/LucaPipolo/gulp-static-starterkit)
 
 # Gulp Static StarterKit
 

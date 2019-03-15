@@ -1,0 +1,17 @@
+language: node_js
+
+node_js:
+- "8"
+
+berfore_install:
+- npm install -g gulp-cli
+- curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version version-number
+- export PATH="$HOME/.yarn/bin:$PATH"
+
+cache:
+  yarn: true
+  npm: true
+
+script:
+- yarn install
+- yarn run test
