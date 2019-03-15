@@ -1,3 +1,6 @@
 #!/bin/bash
 
-rm -rf test-website
+if [ -d "test-website" ]
+then
+  rm -rf test-website
+fi
