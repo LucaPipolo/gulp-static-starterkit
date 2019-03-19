@@ -28,8 +28,7 @@ module.exports = function(config) {
       manifest = gulp.src(config.dist.main + 'rev-manifest.json');
     }
 
-    const task = gulp.src(config.src.templates)
-        .pipe(changed(config.dist.main, {extension: '.html'}))
+    const task = gulp.src(config.src.templates[1])
         .pipe(pug({
           pretty: true,
         }))

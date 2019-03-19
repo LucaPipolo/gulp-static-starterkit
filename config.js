@@ -15,6 +15,7 @@ module.exports = {
       src + 'imgs/**/*',
     ],
     templates: [
+      src + 'templates/**/*.pug',
       src + 'templates/**/!(_)*.pug',
     ],
     fonts: [
