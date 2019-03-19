@@ -29,7 +29,7 @@ module.exports = function(config) {
     gulp.watch(config.src.fonts, gulp.series(
         'fonts:google', 'fonts:custom'
     ));
-    gulp.watch(config.src.templates[1], gulp.series(
+    gulp.watch(config.src.templates[0], gulp.series(
         'lint:pug', 'pug', 'template:injectAssets'
     ));
     gulp.watch(config.src.main + '.htaccess', gulp.series('copy:htaccess'));
