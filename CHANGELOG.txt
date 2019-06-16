@@ -1,5 +1,11 @@
 == Changelog ==
 
+= 1.1.1 - 2019-03-19 =
+* Dev - Added .travis.yml file and badge image.
+* Dev - Fixed production test was checking for wrong file names.
+* Fix - Fixed Pug files were not compiled when partials change on watch.
+* Fix - Fixed was not possible to override config and copyright information.
+
 = 1.1.0 - 2019-03-05 =
 * Fix - Added sample gulpfile.
 * Fix - Added Issue and Pull Request GitHub templates.

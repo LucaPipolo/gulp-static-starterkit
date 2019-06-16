@@ -31,6 +31,10 @@ to easily build static websites.
 
 Great, you can now start to use Gulp Static StarterKit! :smile:
 
+## :wrench: Change default configuration
+
+It's possible to change the default configuration by copying [`config.js`](https://github.com/LucaPipolo/gulp-static-starterkit/blob/master/config.js) file into your project root directory.
+
 ## :mag: What's behind the scenes?
 
 Are you curious to know what's happening behind the scenes?
