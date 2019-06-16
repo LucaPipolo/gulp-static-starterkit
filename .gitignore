@@ -1,2 +1,28 @@
+# Patch/diff artifacts.
+*.patch
+*.diff
+*.orig
+*.rej
+interdiff*.txt
+debug.log
+*.log
+
+# emacs artifacts.
+*~
+\#*\#
+
+# Hidden files.
+.DS*
+.project
+.idea
+
+# Windows links.
+*.url
+*.lnk
+
+# Temporary files.
+tmp*
+
+# Development/Test folders.
 node_modules
 test-website
