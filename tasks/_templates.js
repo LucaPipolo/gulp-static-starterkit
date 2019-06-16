@@ -19,7 +19,6 @@ module.exports = function(config) {
    * compiled HTML file.
    */
   gulp.task('pug', function() {
-    const changed = require('gulp-changed');
     const fs = require('fs');
     const pug = require('gulp-pug');
 
@@ -28,8 +27,7 @@ module.exports = function(config) {
       manifest = gulp.src(config.dist.main + 'rev-manifest.json');
     }
 
-    const task = gulp.src(config.src.templates)
-        .pipe(changed(config.dist.main, {extension: '.html'}))
+    const task = gulp.src(config.src.templates[1])
         .pipe(pug({
           pretty: true,
         }))
