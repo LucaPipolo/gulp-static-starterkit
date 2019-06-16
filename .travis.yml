@@ -12,6 +12,9 @@ cache:
   yarn: true
   npm: true
 
+branches:
+  only: [master]
+
 script:
 - yarn install
 - yarn run test
