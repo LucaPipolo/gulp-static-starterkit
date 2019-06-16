@@ -1,5 +1,13 @@
 == Changelog ==
 
+= 1.1.1 - 2019-06-16 =
+* Dev - Added .travis.yml file and badge image.
+* Fix - Fixed Pug files were not compiled when partials change on watch.
+* Fix - Fixed was not possible to override config and copyright information.
+* Dev - Fixed JS/CSS minification production tests were failing in case the hashtag change.
+* Dev - Fixed MacOS Finder store file was not ignored.
+* Dev - Fixed Travis was checking both PR and Push events.
+
 = 1.1.0 - 2019-03-05 =
 * Fix - Added sample gulpfile.
 * Fix - Added Issue and Pull Request GitHub templates.
