@@ -1,5 +1,8 @@
 == Changelog ==
 
+= 1.1.2 - 2019-06-16 =
+* Fix — Updated yarn dependencies.
+
 = 1.1.1 - 2019-06-16 =
 * Dev - Added .travis.yml file and badge image.
 * Fix - Fixed Pug files were not compiled when partials change on watch.
