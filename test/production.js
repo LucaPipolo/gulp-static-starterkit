@@ -30,7 +30,7 @@ describe('production', function () {
   // Images.
   it('Hash is added to the HTML image reference.', function(done) {
     expect('test-website/dist/rev-manifest.json').to.be.a.file().and.have.contents.that.match(/test.jpg/);
-    expect('test-website/dist/index.html').to.be.a.file().with.contents.that.match(/test-05a23d27dc.jpg/s);
+    expect('test-website/dist/index.html').to.be.a.file().with.contents.that.match(/test-[a-z0-9]{10}\.jpg/);
     done();
   });
 });
