@@ -14,7 +14,7 @@
     "url": "https://github.com/LucaPipolo/gulp-static-starterkit/issues"
   },
   "scripts": {
-    "test": "./test/clean-test-environment.sh && ./test/create-test-environment.sh && ./test/run-gulp.sh && ./node_modules/.bin/mocha -g default || exit 1; npm run test-production",
+    "test": "./test/clean-test-environment.sh && ./test/create-test-environment.sh && ./test/run-gulp.sh && ./node_modules/.bin/mocha -g default || exit 1; npm run test-production --scripts-prepend-node-path",
     "test-production": "./test/run-gulp.sh --production && ./node_modules/.bin/mocha -g production || exit 1 && ./test/clean-test-environment.sh"
   },
   "devDependencies": {
