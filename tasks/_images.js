@@ -11,7 +11,7 @@ module.exports = function(config) {
   /**
    * Optimizes JPEG, GIF, PNG and SVG images.
    *
-   * jpegtran, gisicle, optipgng and svgo libraries are used.
+   * mozjpeg, gisicle, optipgng and svgo libraries are used.
    * If the gulp command have the production option, a rev-manifest.json file
    * is created. It will be used to add a static asset revisioning hash.
    */
@@ -24,7 +24,8 @@ module.exports = function(config) {
     const task = gulp.src(config.src.imgs)
         .pipe(changed(config.dist.imgs))
         .pipe(imagemin([
-          imagemin.jpegtran({
+          imagemin.mozjpeg({
+            quality: 80,
             progressive: true,
           }),
           imagemin.gifsicle({
